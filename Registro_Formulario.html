@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mamuel Alejandro Guayasamin Aviles">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <title>Formulario Registro</title>
+
+    <style>
+      /*Maquetación Grid Layout: (display: grid)*/
+      #entrada {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-gap: 5px 10px;
+      }
+      /* Maquetación Inline-block Layout (display: inline, display: block, display:inline-block)*/
+      .botones {
+        border: 1px solid #e09c35;
+        min-width: 49%;
+        display: inline-block;
+      }
+      /* Otros Estilos */
+      .form-register .buttons {
+        background: #d17913bd;
+      }
+      .form-register p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+      }
+      .form-register h4 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .form-register a {
+        color: white;
+        text-decoration: none;
+      }
+      .form-register a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .form-register {
+        width: 500px;
+        height: auto;
+        background: #532b0a;
+        padding: 30px;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 4px;
+        padding: 30px 20px;
+        color: white;
+      } 
+      .controls {
+        background: #252323;
+        margin-bottom: 10px;
+        border: 1px solid #e09c35;
+        font-family: 'calibri';
+        font-size: 18px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-register">
+      <form id="form">
+        <h4>Formulario Registro</h4>
+        <div id="entrada"> 
+          <div>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+          </div>
+          <div>
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+          </div>
+          <div>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+          </div>
+          <div>
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su numero de Telefono">
+          </div>
+          <div>
+            <input class="controls" type="text" name="n_usuario" id="n_usuario" placeholder="Ingrese su nombre de usuario">
+          </div>
+          <div>
+            <input class="controls" type="password" name="contrasena" id="contraseña" placeholder="Ingrese su Contraseña">
+          </div>
+        </div>
+        <div>
+          <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        </div>
+        <div class="botones">
+          <input class="buttons" type="submit" value="Registrar">
+        </div>
+          <div class="botones">
+          <input class="buttons" type="reset" value="Cancelar">
+        </div>
+        <div>
+          <p><a href="Login_Formulario.html">¿Ya tengo Cuenta?</a></p>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/validacionesRegistro.js">
+
+    </script>
+
+  </body>
+</html>
