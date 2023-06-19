@@ -62,6 +62,9 @@
         height: 185px;
         padding: 20px 5px;
       }
+      #contenido{
+        color: rgb(255, 255, 255);
+      }
     </style>
   </head>
 
@@ -70,13 +73,13 @@
         <div id="banner">
             <img class="Logo" src="Imagenes/Logo.jpg" alt="Logo del restaurante">
             <h2 class="titulo">Restaurante y Comida a Domicilio</h2>
-            <button id="btn"><a href="Login_Formulario.html" style="text-decoration: none;">Acceder</a></button>
+            <button id="btn" style="text-decoration: none;">Registrarse</button>
         </div>
         </header>
 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="Home.html">Home</a></li>
           <li><a href="Menu.html">Menú</a></li>
           <li><a href="Categoria.html">Categorias</a></li>
           <li><a href="Pedido.html">Pedidos</a></li>
@@ -110,7 +113,10 @@
         <h3>Derechos reservados 2023 - Tarea 2 - Grupo #11</h3>
       </footer>
 
-      <script type="text/javascript">
+      <script>
+        document.getElementById('btn').addEventListener('click', function() {
+    window.location.href = 'Login_Formulario.html';
+  });
         // limpiar las clases de todos los enlaces
         var enlaces = document.querySelectorAll("#item img");// retorna un arreglo con todos los elementos
         // que cumplen con el selector
