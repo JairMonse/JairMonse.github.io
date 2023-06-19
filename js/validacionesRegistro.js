@@ -78,7 +78,7 @@ function validarFormulario(event) {
         mensaje("La contraseña debe tener entre 8 y 20 caracteres",txtContraseña);
     }
     if (valido) {
-        window.location.href = "Login_Formulario.html";
+        window.location.href = "Home.html";
     }
   }
   function mensaje(cadenaMensaje, elemento) {
